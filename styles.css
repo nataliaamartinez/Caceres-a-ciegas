@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del menú de navegación */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    color: #003c69;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand:hover {
+    color: #002b4f;
+}
+
+.nav-link {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #003c69;
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Ajuste para el contenido debajo del menú fijo */
+body {
+    padding-top: 80px;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+    font-size: 64px;
+    margin-bottom: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+.hero-description {
+    font-size: 18px;
+    max-width: 1200px;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    text-align: justify;
+    margin: 32px auto;
+    padding: 0 32px;
+    color: #333;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.pdf-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.pdf-container h3 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+}
+
+.pdf-preview {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.pdf-preview:hover {
+    transform: translateY(-5px);
+}
+
+.pdf-preview img {
+    width: 100%;
+    display: block;
+}
+
+.pdf-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pdf-preview:hover .pdf-overlay {
+    opacity: 1;
+}
+
+.pdf-overlay span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.blue-section {
+    background-color: #003c69;
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+.blue-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.blue-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.white-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.white-box h3 {
+    color: #003c69;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.white-box p {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Nuevo estilo para separar las filas */
+.blue-section .row {
+    margin-bottom: 60px;
+}
+
+/* Asegurarse que la última fila no tenga margen inferior */
+.blue-section .row:last-child {
+    margin-bottom: 0;
+}
+
+.custom-list {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.custom-list li {
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.custom-list li:last-child {
+    margin-bottom: 0;
+}
+
+.section-title {
+    color: #003c69;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+.section-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+}
+
+.btn-primary {
+    background-color: #003c69;
+    border-color: #003c69;
+    padding: 12px 30px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #002b4f;
+    border-color: #002b4f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+    padding: 12px 30px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #1a252f;
+    border-color: #1a252f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.98);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    margin-top: 10px;
+    min-width: 300px;
+}
+
+.dropdown-item {
+    color: #333;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    white-space: normal;
+    line-height: 1.4;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: #003c69;
+    transform: translateX(5px);
+}
+
+/* Animación para el icono del dropdown */
+.dropdown-toggle::after {
+    transition: transform 0.3s ease;
+}
+
+.show .dropdown-toggle::after {
+    transform: rotate(-180deg);
+}
+
+/* Estilos para la página de taller */
+.taller-hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    margin-top: 80px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.taller-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.taller-description {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.taller-description h1 {
+    color: #003c69;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+.taller-description p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.taller-description .btn-primary {
+    margin-top: 20px;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.taller-description .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Ajustes adicionales para el texto justificado */
+.text-justify {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    hyphens: auto;
+}
