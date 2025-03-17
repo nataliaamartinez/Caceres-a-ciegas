@@ -90,9 +90,24 @@
     <!-- Contenido principal -->
     <div class="container my-5">
         <div class="row align-items-center mb-4">
-            <!-- Columna de la imagen -->
+            <!-- Columna de la imagen y PDF -->
             <div class="col-md-6">
-                <img src="taller-imagen.jpg" alt="Taller de discapacidad visual" class="img-fluid rounded shadow">
+                <div class="image-pdf-container position-relative">
+                    <!-- Imagen visible -->
+                    <img src="cartel.jpg" 
+                         alt="Cartel del Taller" 
+                         class="img-fluid rounded shadow-sm" 
+                         style="width: 100%; cursor: pointer;">
+                    
+                    <!-- Enlace al PDF -->
+                    <a href="Poster taller artesano alfarería elegante fotografía tonos tierra 2.pdf" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="position-absolute top-0 start-0 w-100 h-100"
+                       style="z-index: 10;"
+                       title="Abrir PDF en nueva pestaña">
+                    </a>
+                </div>
             </div>
             <!-- Columna del texto -->
             <div class="col-md-6">
